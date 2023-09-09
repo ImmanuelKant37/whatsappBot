@@ -35,16 +35,22 @@ client.on('message', async message => {
     const chat = await message.getChat();
 
 
-     if(message.from === remitenteMama  ){
-      //  chat.sendTypingState(150 * message.body.length);
-      
-        
+   
+    if(message.from === remitenteMama  ){
+
+        enviarRespuestaAutomatica(client, chat,remitenteMama,message.body)
+    }
+    else if(message.from === remitenteAio  ){
+
         enviarRespuestaAutomatica(client, chat,remitenteMama,message.body)
     }
     else if(message.from === remitenteNaza  ){
-        chat.sendTypingState(150 * message.body.length);
 
-        enviarRespuestaAutomatica(client, remitenteNaza,message.body)
+        enviarRespuestaAutomatica(client, chat,remitenteMama,message.body)
+    }
+    else if(message.from === remitenteJona  ){
+
+        enviarRespuestaAutomatica(client, chat,remitenteMama,message.body)
     }
     
 });
