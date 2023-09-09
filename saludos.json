@@ -1,0 +1,42 @@
+{
+    "name": "Corpus",
+    "locale": "es-ES",
+    "data": [
+      {
+        "intent": "ikant.saludo",
+        "utterances": [
+          "hola",
+          "Hola",
+          "Alo",
+          "oli",
+          "Olis"
+        ],
+        "answers": [
+          "hola",
+          "Alo",
+          "olis"
+        ]
+      },
+      
+      {
+        "intent": "ikant.saludo.pregunta",
+        "utterances": [
+          "hola, ¿como estas?",
+          "hola como estas?",
+          "eu como estas?",
+          
+          "Hola como estas?",
+          "como estas?",
+          "todo bien?",
+          "como va?"
+        ],
+        "answers": [
+          "hola!, todo bien!",
+          "excelente!",
+          "bien!, gracias por preguntar",
+          "todo bien y vos?, gracias por preguntar"
+        ]
+      }      
+    ]
+  }
+  
